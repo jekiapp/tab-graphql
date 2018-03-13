@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GoImports">
+    <option name="groupStdlibImports" value="true" />
+    <option name="importSorting" value="GOIMPORTS" />
+    <option name="moveAllImportsInOneDeclaration" value="true" />
+    <option name="moveAllStdlibImportsInOneGroup" value="true" />
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+</project>
