@@ -10,4 +10,4 @@ the compiled version of GraphQL-Voyager, first run in the voyager directory befo
 1. Navigate to this directory (example) in Terminal
 2. `npm install`
 3. `npm start`
-4. Open your browser to the address listed in your console. e.g. `Started on http://localhost:49811/`
+4. Open your browser to the address `localhost:3000`

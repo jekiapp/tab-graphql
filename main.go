@@ -39,6 +39,7 @@ func middleware(schema graphql.Schema) http.HandlerFunc {
 
 		fmt.Println("incoming query: ", string(queryString))
 
+		// main function to parse graphql query
 		result := graphql.Do(graphql.Params{
 			Schema:        schema,
 			RequestString: string(queryString),
