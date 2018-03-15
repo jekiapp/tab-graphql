@@ -32,6 +32,7 @@ func createSchema() graphql.Schema {
 	return schema
 }
 
+// get_shop Field implementation
 var getShopField = &graphql.Field{
 	Name: "get_shop",
 	Type: shop,
@@ -52,6 +53,7 @@ type Shop struct {
 	ShopName string
 }
 
+// dummy shop data
 func getShopByID(id int) (Shop, error) {
 	return Shop{
 		ShopID:   id,
@@ -59,6 +61,7 @@ func getShopByID(id int) (Shop, error) {
 	}, nil
 }
 
+// shop node
 var shop = func() *graphql.Object {
 	fields := graphql.Fields{}
 
@@ -116,6 +119,7 @@ func getProductsByShop(shopId int) ([]Product, error) {
 }
 
 var product = func() *graphql.Object {
+	// using BindFields to generate graphql fields from struct
 	fields := graphql.BindFields(Product{})
 
 	return graphql.NewObject(graphql.ObjectConfig{

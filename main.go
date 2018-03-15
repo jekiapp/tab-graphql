@@ -24,6 +24,7 @@ func middleware(schema graphql.Schema) http.HandlerFunc {
 		writer.Header().Set("Access-Control-Allow-Credentials", "true")
 		writer.Header().Set("Access-Control-Allow-Headers", "Content-Type")
 		writer.Header().Set("Access-Control-Allow-Origin", "http://localhost:3000")
+		// pre-flight check by browser
 		if request.Method == http.MethodOptions {
 			return
 		}
